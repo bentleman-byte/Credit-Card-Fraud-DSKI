@@ -6,22 +6,27 @@ Welche Attribute korrellieren besonders stark mit der Menge an Unfällen:
      - Gibt es eine Möglichkeit, herauszufinden, ob bestimmte Kombinationen aus Faktoren ausschlaggebend sind
      - Gibt es einen Koeffizienten/eine Kennzahl, mit der das Ganze gezeigt werden kann? 
 
+Wie stark korellieren die einzelnen Faktoren mit der Schwere des Unfalls?
+    - Korellationskoeffizienten zwischen Faktoren und der Schwere des Unfalls berechnen
+    - Gibt es eine Möglichkeit, die Korellation zwischen einer Kombination aus Faktoren und der Schwere des Unfalls zu erkennen/untersuchen?
 
 
 Hypothesen(Aufgabe 3.2):
 
-- Die Spalten "Accidenn_Date", "Month", "Day_of_Week", und "Year" sollten in ihren Ausprägungen übereinstimmen (z.B. "Month" ist der tatsächliche Monat aus "Accident_Date", "Day_of_Week" ist der passende Wochentag etc.)
-    -> Direkt überprüfen
+- Die Spalten "Accident_Date", "Month", "Day_of_Week", und "Year" sollten in ihren Ausprägungen übereinstimmen (z.B. "Month" ist der tatsächliche Monat aus "Accident_Date", "Day_of_Week" ist der passende Wochentag etc.)
+    - Direkt überprüfen (Schon im Code)
 
 - Wetterbedingungen und Zustand der Straßenoberfläche hängen zusammen (z.B. nasse Straße bei Regen)
-    -> Cramers-V, Kontingenztabelle
+    - Cramers-V: 0.49, starker Zusammenhang, Kontingenztabelle
 
 - Straßentyp und Speed-Limit hängen zusammen
-    - Cramers-V/ Eta-Quadrat, Graphen und Gruppierung
+    - Cramers-V / Eta-Quadrat (Auswertung nach Cohen(1988)), Graphen, Gruppieren nach Straßentyp und durchschnittliches Speed-Limit anschauen
 
-- Zeit und Lichtbedingungen hängen zusammen
+- Zeit, Monat und Lichtbedingungen hängen zusammen
+    - Heatmap von mehreren Cramers-V´s 
 
-- "Junction_Control" und "Junction_Type" korellieren
+- "Junction_Control" und "Junction_Type" korelliere
+    - Cramers-V: 0.49, Kontingenztabelle
 
 - Spalten und Ausprägungen, die sich auf die Häufigkeit der Unfälle auswirken:
     - Wetter-, Straßen- und Lichtbedingungen:
