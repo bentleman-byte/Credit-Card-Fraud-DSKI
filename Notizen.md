@@ -17,16 +17,16 @@ Hypothesen(Aufgabe 3.2):
     - Direkt überprüfen (Schon im Code)
 
 - Wetterbedingungen und Zustand der Straßenoberfläche hängen zusammen (z.B. nasse Straße bei Regen)
-    - Cramers-V: 0.49, starker Zusammenhang, Kontingenztabelle ✅
+    - Cramers-V: 0.49, starker Zusammenhang, Kontingenztabelle
 
 - Straßentyp und Speed-Limit hängen zusammen
-    - Eta-Quadrat 0.16/ 16% Auswertung nach Cohen(1988), Kontingenztabelle ✅
+    - Cramers-V / Eta-Quadrat (Auswertung nach Cohen(1988)), Graphen, Gruppieren nach Straßentyp und durchschnittliches Speed-Limit anschauen
 
 - Zeit, Monat und Lichtbedingungen hängen zusammen
-    - (Verschiedene Methoden im Code probiert)
+    - Heatmap von mehreren Cramers-V´s 
 
 - "Junction_Control" und "Junction_Type" korelliere
-    - Cramers-V: 0.49, Kontingenztabelle ✅
+    - Cramers-V: 0.49, Kontingenztabelle
 
 - Spalten und Ausprägungen, die sich auf die Häufigkeit der Unfälle auswirken:
     - Wetter-, Straßen- und Lichtbedingungen:
